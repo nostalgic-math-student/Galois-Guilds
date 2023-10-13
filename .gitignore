@@ -129,5 +129,6 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
+.yarn.lock
 # Testing repos
 testing_repos/
