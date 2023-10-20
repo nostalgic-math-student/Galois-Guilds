@@ -128,7 +128,8 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
-
 .yarn.lock
+./frontend-galois-guilds/yarn.lock
+
 # Testing repos
 testing_repos/

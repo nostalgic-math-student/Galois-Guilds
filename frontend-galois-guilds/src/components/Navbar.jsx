@@ -1,10 +1,13 @@
 import React from 'react'
+import gglogo from '../assets/gglogo.jpg';
+
 
 const Navbar = () => {
     return (
-        <div className="navbar bg-base-200">
+        <div className="navbar bg-base-300">
             <div className="flex-1">
-                <a className="btn btn-ghost normal-case text-xl" href='/'> Galois Guilds </a>
+            <img class="w-24 rounded-full" src={gglogo} alt="" />
+                <a className="btn btn-ghost normal-case text-xl" href='/'> GaloisGuilds </a>
             </div>
             <div className="flex-none">
                 <button className="btn btn-square btn-ghost" onClick={()=>{}}>
