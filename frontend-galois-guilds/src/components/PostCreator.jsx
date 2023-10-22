@@ -16,14 +16,18 @@ const PostCreator = ({ onCreatePost }) => {
   };
 
   return (
-    <div>
+    <div className='card'>
+        <div className='card-title mx-auto text-center'>
       <h2>Create a New Post</h2>
+        </div>
+        <div className='card-body'>
       <textarea
         value={postContent}
         onChange={handlePostContentChange}
         placeholder="Enter your post content..."
       />
-      <button onClick={handleCreatePost}>Create Post</button>
+        </div>
+      <button onClick={handleCreatePost} className='btn btn-accent w-36 mx-auto'>Create Post</button>
     </div>
   );
 };
