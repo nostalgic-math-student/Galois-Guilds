@@ -10,8 +10,8 @@ import cat4 from '../assets/cat4.jpg';
 import { Rerousel } from 'rerousel';
 
 
-const Home = () => {
 
+const Home = () => {
   
   const carouselItems = [
     { id: 'slide2', imageSrc: cat1 , textSubtitle :"Best web3 kickstart on Internet!", textTitle: "Mr Pickles"},
@@ -28,23 +28,6 @@ const Home = () => {
     <div className="hero min-h-screen bg-base-200">
       <div className=' w-full'>
         <div className='hero-content mx-auto flex-col text-center columns-2'>
-
-{/*         <div className="carousel w-full">
-        {carouselItems.map((item, index) => (
-          <div key={item.id} className={`carousel-item relative w-full shadow-2xl`}>
-          <img src={item.imageSrc} className="w-1/2 rounded-3xl" />
-          <div className='m-auto align-center space-y-4'>
-          <p className='text-5xl font-bold'>
-          {item.textTitle}
-          </p>
-          <p className='m-auto text-2xl align-bottom'>
-          {item.textSubtitle}
-          </p>
-          </div>
-          </div>
-          ))}
-          </div>
-        */}
 
 <Rerousel itemRef={lastItemRef} interval={4500}>
           {carouselItems.map((item, index) => (
